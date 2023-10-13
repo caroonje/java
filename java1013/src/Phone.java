@@ -1,4 +1,6 @@
-public class Phone {
+//추상 클래스로 선언한 Phone클래스
+//클래스 abstract 키워드 사용시 추상클래스가 된다
+public abstract class Phone {
 
     public String owner;
     public Phone(String owner){

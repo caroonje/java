@@ -1,3 +1,4 @@
+//추상 클래스를 상속 받는 자식 클래스
 public class SmartPhone extends Phone{
     public SmartPhone(String owner){
         super(owner);
