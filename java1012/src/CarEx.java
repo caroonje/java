@@ -8,7 +8,7 @@ public class CarEx {
 //            Car 클래스 타입의 메소드 run()을 사용하여 주행시 문제가 발생한 위치를 받아옴
 //            0 : 정상, 1: 앞왼쪽 타이어, 2:앞 오른쪽 타이어, 3:뒤 왼쪽 타이어, 4:뒤 오른쪽 타이어
             int problemLocation = car.run();
-
+//            받아온 오류 위치를 찾아감
             switch (problemLocation){
                 case 1:
                     System.out.println("앞 왼쪽 HankookTire로 교체");
