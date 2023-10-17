@@ -12,7 +12,7 @@ public class ClassB implements MyInter{
 //    public void method2() {
 //        System.out.println("ClassB - method2() 호출");
 //    }
-
+//      부모인
     public void method3(){
         System.out.println("ClassB - method3()호출");
     }
