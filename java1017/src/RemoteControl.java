@@ -1,11 +1,13 @@
 public interface RemoteControl {
+//    상수 선언
     public static final int MAX_VOLUME =10;
     public static final int MIN_VOLUME = 0;
+
+//    메소드 선언
     public abstract void turnOn();
     public abstract void turnOff();
     public abstract void setVolume(int volume);
-    public abstract void setMute(boolean mute);
-
+//    디폴트 메소드 선언
     public default void setMute(boolean mute){
         if(mute){
             System.out.println("무음 처리합니다.");
@@ -14,6 +16,7 @@ public interface RemoteControl {
         }
     }
 
+//    정적 메소드 선언
     public static void changeBattery(){
         System.out.println("배터리를 교체합니다.");
     }
