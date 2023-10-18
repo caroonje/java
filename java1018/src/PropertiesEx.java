@@ -1,4 +1,4 @@
-import javax.imageio.IIOException;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URLDecoder;
@@ -13,7 +13,7 @@ public class PropertiesEx {
         String path = PropertiesEx.class.getResource("database.properties").getPath();
         try {
 //        파일 경로에 영문자가 아닌 글자가 있을 경우에도 정상적으로 출력하기 위해서 URLDecoder를 사용하여 경로를 가져옴
-            path = URLDecoder.decode(path, "UFT-8");
+            path = URLDecoder.decode(path, "UTF-8");
 //        fileReader 클래스를 통해서 지정한 파일의 내용을 읽어옴
 //          load() : 읽어온 내욜을 '=' 기호를 기준으로 하여 왼쪽의 문자열을 key로 설정, 오른쪽 문자열을 value로 설정
             properties.load(new FileReader(path));}
@@ -32,3 +32,4 @@ public class PropertiesEx {
         System.out.println("password : " + password);
     }
 }
+
